@@ -36,9 +36,9 @@ def setup_schedule(rtsp_url, output_dir, schedule_times):
         schedule.every().day.at(time_str).do(capture_screenshot_job, rtsp_url, output_dir)
 
 # Параметры
-rtsp_url = "ваш_rtsp_url"
-output_dir = "путь_к_вашей_директории"
-schedule_times = ["10:00", "12:00", "14:00", "16:00", "18:00", "20:00"] #время пар
+rtsp_url = "rtsp_url"
+output_dir = "путь_к_директории"
+schedule_times = ["09:00", "09:40", "10:10"] #время пар
 
 setup_schedule(rtsp_url, output_dir, schedule_times)
 
